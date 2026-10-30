@@ -33,7 +33,7 @@ export function Hero() {
           <MbButton href={whatsappLink()} external variant="white">Fale com um especialista</MbButton>
         </div>
       </div>
-      <p className="absolute right-6 bottom-6 hidden items-center gap-3 text-[11px] font-bold uppercase tracking-[0.18em] text-primary-foreground/85 md:flex">
+      <p className="absolute right-24 bottom-8 hidden items-center gap-3 text-[11px] font-bold uppercase tracking-[0.18em] text-primary-foreground/85 md:flex">
         <span aria-hidden className="h-0.5 w-6 bg-blue-400" />MB Acessórios e Alumínios · Vila Velha, ES
       </p>
     </section>
