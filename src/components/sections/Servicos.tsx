@@ -1,6 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
 import { useRef } from "react";
-<<<<<<< HEAD
 import { Eyebrow } from "@/components/ui-mb";
 import { whatsappLink } from "@/config/site";
 import { useReveal } from "@/hooks/use-reveal";
@@ -18,15 +17,6 @@ const servicos = [
     d: "Conte com uma equipe preparada para atender você e montar o orçamento do seu projeto.",
     imagem: orcamentoImg // Imagem da atendente
   },
-=======
-import { Eyebrow, NavyPlaceholder } from "@/components/ui-mb";
-import { whatsappLink } from "@/config/site";
-import { useReveal } from "@/hooks/use-reveal";
-
-const servicos = [
-  { t: "Entregas programadas", d: "Entregamos toda terça e quinta-feira em Vila Velha, Vitória e Cariacica. Consulte as condições e programe seu pedido." },
-  { t: "Orçamento com nossos vendedores", d: "Conte com uma equipe preparada para atender você e montar o orçamento do seu projeto." },
->>>>>>> 5b9e2f5a3b8883a64bf7211216bcf3969b6b385b
 ];
 
 export function Servicos() {
@@ -41,7 +31,6 @@ export function Servicos() {
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {servicos.map((s) => (
             <article key={s.t} data-anim className="overflow-hidden rounded-lg bg-card text-card-foreground">
-<<<<<<< HEAD
               {/* Exibe a imagem de forma limpa mantendo a proporção */}
               <div className="aspect-[16/8] w-full overflow-hidden">
                 <img 
@@ -51,9 +40,6 @@ export function Servicos() {
                   className="h-full w-full object-cover transition-transform duration-500 hover:scale-105" 
                 />
               </div>
-=======
-              <NavyPlaceholder label={s.t} className="aspect-[16/8]" />
->>>>>>> 5b9e2f5a3b8883a64bf7211216bcf3969b6b385b
               <div className="p-7">
                 <h3 className="text-2xl text-ink">{s.t}</h3>
                 <p className="mt-3 text-ink-soft">{s.d}</p>
@@ -67,8 +53,4 @@ export function Servicos() {
       </div>
     </section>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 5b9e2f5a3b8883a64bf7211216bcf3969b6b385b

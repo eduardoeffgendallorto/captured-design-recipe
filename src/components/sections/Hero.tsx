@@ -1,11 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
-<<<<<<< HEAD
 import fachada from "../../assets/faixada1.jpg";
-=======
-import fachada from "@/assets/fachada.jpg.asset.json";
->>>>>>> 5b9e2f5a3b8883a64bf7211216bcf3969b6b385b
 import { whatsappLink } from "@/config/site";
 import { BrandCurves, Eyebrow, MbButton } from "@/components/ui-mb";
 
@@ -21,11 +17,7 @@ export function Hero() {
 
   return (
     <section id="home" ref={ref} className="relative isolate flex min-h-[calc(100vh-120px)] items-center overflow-hidden bg-navy-900">
-<<<<<<< HEAD
       <img src={fachada} alt="Fachada da loja MB Acessórios e Alumínios em Vila Velha" fetchPriority="high" className="absolute inset-0 -z-20 h-full w-full object-cover object-[60%_center]" />
-=======
-      <img src={fachada.url} alt="Fachada da loja MB Acessórios e Alumínios em Vila Velha" fetchPriority="high" className="absolute inset-0 -z-20 h-full w-full object-cover object-[60%_center]" />
->>>>>>> 5b9e2f5a3b8883a64bf7211216bcf3969b6b385b
       <div className="absolute inset-0 -z-10 bg-gradient-hero" />
       <BrandCurves className="-right-10 -bottom-10 h-[420px] w-[420px] text-blue-400 opacity-40" />
       <div className="container-mb py-20 text-primary-foreground">

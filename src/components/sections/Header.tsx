@@ -1,18 +1,10 @@
 import { Clock, MapPin, Menu, Phone, X } from "lucide-react";
 import { useEffect, useState } from "react";
-<<<<<<< HEAD
 import logo from "../../assets/logomb.webp";
-=======
-import logo from "@/assets/logomb.webp.asset.json";
->>>>>>> 5b9e2f5a3b8883a64bf7211216bcf3969b6b385b
 import { menu, site, whatsappLink } from "@/config/site";
 import { MbButton } from "@/components/ui-mb";
 import { cn } from "@/lib/utils";
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 5b9e2f5a3b8883a64bf7211216bcf3969b6b385b
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -51,11 +43,7 @@ export function Header() {
       <div className={cn("bg-background transition-shadow", scrolled && "shadow-header")}>
         <div className="container-mb flex h-[84px] items-center justify-between gap-6">
           <a href="#home" aria-label={`${site.nome} — início`}>
-<<<<<<< HEAD
             <img src={logo} alt={site.nome} width={60} height={60} className="size-[60px] rounded-md" />
-=======
-            <img src={logo.url} alt={site.nome} width={60} height={60} className="size-[60px] rounded-md" />
->>>>>>> 5b9e2f5a3b8883a64bf7211216bcf3969b6b385b
           </a>
           <nav aria-label="Principal" className="hidden lg:block">
             <ul className="flex gap-8">
@@ -78,11 +66,7 @@ export function Header() {
       {open && (
         <div className="fixed inset-0 z-[60] flex flex-col bg-navy-900 text-primary-foreground lg:hidden">
           <div className="container-mb flex h-[84px] items-center justify-between">
-<<<<<<< HEAD
             <img src={logo} alt={site.nome} className="size-[60px] rounded-md" />
-=======
-            <img src={logo.url} alt={site.nome} className="size-[60px] rounded-md" />
->>>>>>> 5b9e2f5a3b8883a64bf7211216bcf3969b6b385b
             <button aria-label="Fechar menu" className="p-2" onClick={() => setOpen(false)}><X className="size-7" /></button>
           </div>
           <nav aria-label="Menu móvel" className="container-mb flex flex-1 flex-col justify-center gap-6">
