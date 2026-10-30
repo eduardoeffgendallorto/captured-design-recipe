@@ -1,5 +1,9 @@
 import { Instagram, MapPin, Phone } from "lucide-react";
+<<<<<<< HEAD
 import logo from "../../assets/logomb.webp";
+=======
+import logo from "@/assets/logomb.webp.asset.json";
+>>>>>>> 5b9e2f5a3b8883a64bf7211216bcf3969b6b385b
 import { BrandCurves } from "@/components/ui-mb";
 import { enderecoCompleto, menu, site, whatsappLink } from "@/config/site";
 
@@ -9,7 +13,12 @@ export function Footer() {
       <BrandCurves className="-left-20 -bottom-20 h-[360px] w-[360px] -scale-x-100 text-blue-400 opacity-20" />
       <div className="container-mb relative grid gap-10 md:grid-cols-3">
         <div>
+<<<<<<< HEAD
           <img src={logo} alt={site.nome} loading="lazy" className="size-20 rounded-md" />          <p className="mt-5 max-w-xs text-primary-foreground/80">{site.slogan}</p>
+=======
+          <img src={logo.url} alt={site.nome} loading="lazy" className="size-20 rounded-md" />
+          <p className="mt-5 max-w-xs text-primary-foreground/80">{site.slogan}</p>
+>>>>>>> 5b9e2f5a3b8883a64bf7211216bcf3969b6b385b
         </div>
         <nav aria-label="Rodapé">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-400">Menu</p>
